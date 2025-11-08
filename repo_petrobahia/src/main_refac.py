@@ -1,5 +1,5 @@
 # Importa os dados originais
-from legacy.main import pedidos, clientes
+from main import pedidos, clientes
 
 # Importa os serviços refatorados
 from petrobahia.clientes import (
