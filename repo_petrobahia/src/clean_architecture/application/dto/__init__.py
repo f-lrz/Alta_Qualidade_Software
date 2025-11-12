@@ -7,6 +7,7 @@ from typing import Optional
 @dataclass
 class ClienteInputDTO:
     """DTO para entrada de dados de cliente."""
+
     nome: str
     email: str
     cnpj: str
@@ -15,6 +16,7 @@ class ClienteInputDTO:
 @dataclass
 class ClienteOutputDTO:
     """DTO para saída de dados de cliente."""
+
     nome: str
     email: str
     cnpj: str
@@ -25,6 +27,7 @@ class ClienteOutputDTO:
 @dataclass
 class PedidoInputDTO:
     """DTO para entrada de dados de pedido."""
+
     cliente: str
     produto: str
     qtd: int
@@ -34,6 +37,7 @@ class PedidoInputDTO:
 @dataclass
 class PedidoOutputDTO:
     """DTO para saída de dados de pedido."""
+
     cliente: str
     produto: str
     quantidade: int

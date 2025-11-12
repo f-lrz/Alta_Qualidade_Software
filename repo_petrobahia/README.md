@@ -1,5 +1,11 @@
 # 🏭 PetroBahia S.A. - Refatoração com Clean Architecture
 
+![Python](https://img.shields.io/badge/Python-3.8%2B-blue)
+![Code Style](https://img.shields.io/badge/code%20style-black-black)
+![Imports](https://img.shields.io/badge/imports-isort-blue)
+![Pylint](https://img.shields.io/badge/pylint-8.74%2F10-green)
+![Status](https://img.shields.io/badge/status-production--ready-success)
+
 Sistema de gerenciamento de pedidos de combustíveis que evoluiu de **código legado** para **Clean Architecture**.
 
 ## 🎯 Objetivo
@@ -32,7 +38,22 @@ cd src && python clean_architecture/main.py
 
 # Executar testes
 python test_clean_architecture.py
+
+# Verificar qualidade de código (Black, isort, Pylint)
+./scripts/quality_check.sh all
 ```
+
+## 🔍 Ferramentas de Qualidade
+
+O projeto utiliza as melhores ferramentas de análise e formatação de código Python:
+
+| Ferramenta | Versão | Propósito | Score Atual |
+|------------|--------|-----------|-------------|
+| **Black** | 24.10.0 | Formatador automático | ✅ 100% |
+| **isort** | 5.13.2 | Organizador de imports | ✅ 100% |
+| **Pylint** | 3.3.1 | Analisador de código | ⭐ 8.74/10 |
+
+📖 **[Guia Completo de Ferramentas](QUALITY_TOOLS.md)** - Documentação detalhada sobre uso e configuração
 
 ## 📊 Comparação: Antes vs Depois
 
@@ -258,9 +279,14 @@ Para detalhes técnicos aprofundados:
 - 📖 [README Clean Architecture](src/clean_architecture/README.md)
 - 📊 [Comparação Código](src/clean_architecture/COMPARISON.md)
 - 🔧 [Guia de Uso](src/clean_architecture/USAGE_GUIDE.md)
+- 🔍 [Ferramentas de Qualidade](QUALITY_TOOLS.md) ⭐ **NOVO**
 
 ---
 
 ## 👥 Autores
 
-**PetroBahia S.A.** - Sistema de Pedidos
+**PetroBahia S.A.** - Sistema de Pedidos  
+Projeto educacional de refatoração com Clean Architecture
+
+**Ferramentas de Qualidade:** Black, isort, Pylint  
+**Score de Qualidade:** 8.74/10 ⭐

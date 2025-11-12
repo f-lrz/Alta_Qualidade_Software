@@ -2,12 +2,13 @@
 
 from abc import ABC, abstractmethod
 from typing import Optional
-from ..value_objects import ProdutoTipo, CupomTipo
+
+from ..value_objects import CupomTipo, ProdutoTipo
 
 
 class CalculoPrecoServiceInterface(ABC):
     """Interface para serviço de cálculo de preço."""
-    
+
     @abstractmethod
     def calcular(self, produto: ProdutoTipo, quantidade: int) -> float:
         """Calcula o preço base do pedido."""
@@ -16,14 +17,14 @@ class CalculoPrecoServiceInterface(ABC):
 
 class DescontoServiceInterface(ABC):
     """Interface para serviço de aplicação de descontos."""
-    
+
     @abstractmethod
     def aplicar_desconto(
-        self, 
-        preco: float, 
+        self,
+        preco: float,
         produto: ProdutoTipo,
         quantidade: int,
-        cupom: Optional[CupomTipo]
+        cupom: Optional[CupomTipo],
     ) -> float:
         """Aplica desconto ao preço."""
         pass
@@ -31,7 +32,7 @@ class DescontoServiceInterface(ABC):
 
 class ArredondamentoServiceInterface(ABC):
     """Interface para serviço de arredondamento."""
-    
+
     @abstractmethod
     def arredondar(self, preco: float, produto: ProdutoTipo) -> float:
         """Arredonda o preço de acordo com as regras do produto."""

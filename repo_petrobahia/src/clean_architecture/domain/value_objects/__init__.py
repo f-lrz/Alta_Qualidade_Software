@@ -5,6 +5,7 @@ from enum import Enum
 
 class ProdutoTipo(Enum):
     """Tipo de produto disponível."""
+
     DIESEL = "diesel"
     GASOLINA = "gasolina"
     ETANOL = "etanol"
@@ -13,6 +14,7 @@ class ProdutoTipo(Enum):
 
 class CupomTipo(Enum):
     """Tipo de cupom de desconto."""
+
     MEGA10 = "MEGA10"
     NOVO5 = "NOVO5"
     LUB2 = "LUB2"
